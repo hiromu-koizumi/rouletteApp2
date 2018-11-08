@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D621BEB2388C21683930BA6 /* Pods_rouletteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BDBC4B439511B13DC7E30DB /* Pods_rouletteApp.framework */; };
+		9F06AF552193C9AB00D088B9 /* waku.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F06AF542193C9AB00D088B9 /* waku.jpg */; };
 		9FE7A5052192B1FD0059C131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7A5042192B1FD0059C131 /* AppDelegate.swift */; };
 		9FE7A5072192B1FD0059C131 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7A5062192B1FD0059C131 /* ViewController.swift */; };
 		9FE7A50A2192B1FD0059C131 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7A5082192B1FD0059C131 /* Main.storyboard */; };
 		9FE7A50C2192B1FF0059C131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7A50B2192B1FF0059C131 /* Assets.xcassets */; };
 		9FE7A50F2192B1FF0059C131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7A50D2192B1FF0059C131 /* LaunchScreen.storyboard */; };
+		9FE7A5172192B3E90059C131 /* piko5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7A5162192B3E90059C131 /* piko5.mp3 */; };
+		9FE7A5192192B3F40059C131 /* finsish1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7A5182192B3F40059C131 /* finsish1.mp3 */; };
+		9FE7A51B2192C7C70059C131 /* ざわ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7A51A2192C7C70059C131 /* ざわ.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BDBC4B439511B13DC7E30DB /* Pods_rouletteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rouletteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F06AF542193C9AB00D088B9 /* waku.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = waku.jpg; sourceTree = "<group>"; };
 		9FE7A5012192B1FD0059C131 /* rouletteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rouletteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE7A5042192B1FD0059C131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FE7A5062192B1FD0059C131 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,11 @@
 		9FE7A50B2192B1FF0059C131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FE7A50E2192B1FF0059C131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FE7A5102192B1FF0059C131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FE7A5162192B3E90059C131 /* piko5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piko5.mp3; sourceTree = "<group>"; };
+		9FE7A5182192B3F40059C131 /* finsish1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = finsish1.mp3; sourceTree = "<group>"; };
+		9FE7A51A2192C7C70059C131 /* ざわ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ざわ.jpg"; sourceTree = "<group>"; };
+		B735BBFAF3C3A4130FD41463 /* Pods-rouletteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rouletteApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rouletteApp/Pods-rouletteApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EC8E5FDAAFC86F58AF78C96B /* Pods-rouletteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rouletteApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-rouletteApp/Pods-rouletteApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D621BEB2388C21683930BA6 /* Pods_rouletteApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A93F5EB9D94AA612099BC7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B735BBFAF3C3A4130FD41463 /* Pods-rouletteApp.debug.xcconfig */,
+				EC8E5FDAAFC86F58AF78C96B /* Pods-rouletteApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9FE7A4F82192B1FD0059C131 = {
 			isa = PBXGroup;
 			children = (
 				9FE7A5032192B1FD0059C131 /* rouletteApp */,
 				9FE7A5022192B1FD0059C131 /* Products */,
+				4A93F5EB9D94AA612099BC7C /* Pods */,
+				E3C714A000CDEDD7C0A9EC61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +78,26 @@
 		9FE7A5032192B1FD0059C131 /* rouletteApp */ = {
 			isa = PBXGroup;
 			children = (
+				9F06AF542193C9AB00D088B9 /* waku.jpg */,
+				9FE7A5162192B3E90059C131 /* piko5.mp3 */,
+				9FE7A5182192B3F40059C131 /* finsish1.mp3 */,
 				9FE7A5042192B1FD0059C131 /* AppDelegate.swift */,
 				9FE7A5062192B1FD0059C131 /* ViewController.swift */,
 				9FE7A5082192B1FD0059C131 /* Main.storyboard */,
+				9FE7A51A2192C7C70059C131 /* ざわ.jpg */,
 				9FE7A50B2192B1FF0059C131 /* Assets.xcassets */,
 				9FE7A50D2192B1FF0059C131 /* LaunchScreen.storyboard */,
 				9FE7A5102192B1FF0059C131 /* Info.plist */,
 			);
 			path = rouletteApp;
+			sourceTree = "<group>";
+		};
+		E3C714A000CDEDD7C0A9EC61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BDBC4B439511B13DC7E30DB /* Pods_rouletteApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FE7A5132192B1FF0059C131 /* Build configuration list for PBXNativeTarget "rouletteApp" */;
 			buildPhases = (
+				BC0451FD978B259896C35A42 /* [CP] Check Pods Manifest.lock */,
 				9FE7A4FD2192B1FD0059C131 /* Sources */,
 				9FE7A4FE2192B1FD0059C131 /* Frameworks */,
 				9FE7A4FF2192B1FD0059C131 /* Resources */,
+				53256923D986ABD55AE51389 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +161,63 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FE7A50F2192B1FF0059C131 /* LaunchScreen.storyboard in Resources */,
+				9F06AF552193C9AB00D088B9 /* waku.jpg in Resources */,
+				9FE7A5192192B3F40059C131 /* finsish1.mp3 in Resources */,
 				9FE7A50C2192B1FF0059C131 /* Assets.xcassets in Resources */,
+				9FE7A51B2192C7C70059C131 /* ざわ.jpg in Resources */,
 				9FE7A50A2192B1FD0059C131 /* Main.storyboard in Resources */,
+				9FE7A5172192B3E90059C131 /* piko5.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53256923D986ABD55AE51389 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-rouletteApp/Pods-rouletteApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rouletteApp/Pods-rouletteApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC0451FD978B259896C35A42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rouletteApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9FE7A4FD2192B1FD0059C131 /* Sources */ = {
@@ -280,6 +369,7 @@
 		};
 		9FE7A5142192B1FF0059C131 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B735BBFAF3C3A4130FD41463 /* Pods-rouletteApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +388,7 @@
 		};
 		9FE7A5152192B1FF0059C131 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8E5FDAAFC86F58AF78C96B /* Pods-rouletteApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
