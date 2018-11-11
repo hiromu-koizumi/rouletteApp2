@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4D621BEB2388C21683930BA6 /* Pods_rouletteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BDBC4B439511B13DC7E30DB /* Pods_rouletteApp.framework */; };
-		9F06AF552193C9AB00D088B9 /* waku.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F06AF542193C9AB00D088B9 /* waku.jpg */; };
 		9F06AF5F2194781D00D088B9 /* terere.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F06AF5E2194781D00D088B9 /* terere.mp3 */; };
 		9F173D3521950FD7008C3AFB /* finish2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F173D3421950FD7008C3AFB /* finish2.mp3 */; };
 		9F173D3721952AC2008C3AFB /* finish3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F173D3621952AC2008C3AFB /* finish3.mp3 */; };
@@ -20,12 +19,12 @@
 		9FE7A50C2192B1FF0059C131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7A50B2192B1FF0059C131 /* Assets.xcassets */; };
 		9FE7A50F2192B1FF0059C131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7A50D2192B1FF0059C131 /* LaunchScreen.storyboard */; };
 		9FE7A5172192B3E90059C131 /* piko5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7A5162192B3E90059C131 /* piko5.mp3 */; };
-		9FE7A5192192B3F40059C131 /* finsish1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7A5182192B3F40059C131 /* finsish1.mp3 */; };
+		9FE7A5192192B3F40059C131 /* finish1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7A5182192B3F40059C131 /* finish1.mp3 */; };
+		9FE881672197BF6B003D1430 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE881662197BF6B003D1430 /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1BDBC4B439511B13DC7E30DB /* Pods_rouletteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rouletteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F06AF542193C9AB00D088B9 /* waku.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = waku.jpg; sourceTree = "<group>"; };
 		9F06AF5E2194781D00D088B9 /* terere.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = terere.mp3; sourceTree = "<group>"; };
 		9F173D3421950FD7008C3AFB /* finish2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = finish2.mp3; sourceTree = "<group>"; };
 		9F173D3621952AC2008C3AFB /* finish3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = finish3.mp3; sourceTree = "<group>"; };
@@ -39,7 +38,8 @@
 		9FE7A50E2192B1FF0059C131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FE7A5102192B1FF0059C131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FE7A5162192B3E90059C131 /* piko5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piko5.mp3; sourceTree = "<group>"; };
-		9FE7A5182192B3F40059C131 /* finsish1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = finsish1.mp3; sourceTree = "<group>"; };
+		9FE7A5182192B3F40059C131 /* finish1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = finish1.mp3; sourceTree = "<group>"; };
+		9FE881662197BF6B003D1430 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		B735BBFAF3C3A4130FD41463 /* Pods-rouletteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rouletteApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rouletteApp/Pods-rouletteApp.debug.xcconfig"; sourceTree = "<group>"; };
 		EC8E5FDAAFC86F58AF78C96B /* Pods-rouletteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rouletteApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-rouletteApp/Pods-rouletteApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,13 +86,13 @@
 		9FE7A5032192B1FD0059C131 /* rouletteApp2 */ = {
 			isa = PBXGroup;
 			children = (
-				9F06AF542193C9AB00D088B9 /* waku.jpg */,
 				9F173D3621952AC2008C3AFB /* finish3.mp3 */,
 				9F06AF5E2194781D00D088B9 /* terere.mp3 */,
 				9FE7A5162192B3E90059C131 /* piko5.mp3 */,
 				9F173D3A21955571008C3AFB /* ban.mp3 */,
-				9FE7A5182192B3F40059C131 /* finsish1.mp3 */,
+				9FE7A5182192B3F40059C131 /* finish1.mp3 */,
 				9FE7A5042192B1FD0059C131 /* AppDelegate.swift */,
+				9FE881662197BF6B003D1430 /* TutorialViewController.swift */,
 				9F173D3421950FD7008C3AFB /* finish2.mp3 */,
 				9F173D3821955538008C3AFB /* doramu.mp3 */,
 				9FE7A5062192B1FD0059C131 /* ViewController.swift */,
@@ -177,8 +177,7 @@
 				9F173D3B21955571008C3AFB /* ban.mp3 in Resources */,
 				9FE7A50F2192B1FF0059C131 /* LaunchScreen.storyboard in Resources */,
 				9F173D3521950FD7008C3AFB /* finish2.mp3 in Resources */,
-				9F06AF552193C9AB00D088B9 /* waku.jpg in Resources */,
-				9FE7A5192192B3F40059C131 /* finsish1.mp3 in Resources */,
+				9FE7A5192192B3F40059C131 /* finish1.mp3 in Resources */,
 				9FE7A50C2192B1FF0059C131 /* Assets.xcassets in Resources */,
 				9F173D3721952AC2008C3AFB /* finish3.mp3 in Resources */,
 				9FE7A50A2192B1FD0059C131 /* Main.storyboard in Resources */,
@@ -241,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FE7A5072192B1FD0059C131 /* ViewController.swift in Sources */,
+				9FE881672197BF6B003D1430 /* TutorialViewController.swift in Sources */,
 				9FE7A5052192B1FD0059C131 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
