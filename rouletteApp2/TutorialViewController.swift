@@ -180,6 +180,20 @@ class TutorialViewController: UIViewController,UIGestureRecognizerDelegate{
                 tutorial5.isHidden = false
                 yazirusi5.isHidden = false
                 doneB.isHidden = false
+
+            case 4:
+                tutorial5.isHidden = true
+                yazirusi5.isHidden = true
+                doneB.isHidden = true
+                minus.isHidden = true
+                plus.isHidden = true
+                textLeft.isHidden = true
+                textRight.isHidden = true
+                textCenterLeft.isHidden = true
+                textCenterRight.isHidden = true
+                textUnderLeft.isHidden = true
+                textUnderRight.isHidden = true 
+                
                 goButton.isHidden = false
             default:
                 print("dame")

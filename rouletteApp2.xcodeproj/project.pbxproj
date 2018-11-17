@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D621BEB2388C21683930BA6 /* Pods_rouletteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BDBC4B439511B13DC7E30DB /* Pods_rouletteApp.framework */; };
 		9F06AF5F2194781D00D088B9 /* terere.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F06AF5E2194781D00D088B9 /* terere.mp3 */; };
 		9F173D3521950FD7008C3AFB /* finish2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F173D3421950FD7008C3AFB /* finish2.mp3 */; };
 		9F173D3721952AC2008C3AFB /* finish3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F173D3621952AC2008C3AFB /* finish3.mp3 */; };
 		9F173D3921955538008C3AFB /* doramu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F173D3821955538008C3AFB /* doramu.mp3 */; };
 		9F173D3B21955571008C3AFB /* ban.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F173D3A21955571008C3AFB /* ban.mp3 */; };
+		9FD47636219B0A6B00D29A58 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FD47635219B0A6B00D29A58 /* GoogleService-Info (1).plist */; };
 		9FE7A5052192B1FD0059C131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7A5042192B1FD0059C131 /* AppDelegate.swift */; };
 		9FE7A5072192B1FD0059C131 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7A5062192B1FD0059C131 /* ViewController.swift */; };
 		9FE7A50A2192B1FD0059C131 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7A5082192B1FD0059C131 /* Main.storyboard */; };
@@ -21,15 +21,19 @@
 		9FE7A5172192B3E90059C131 /* piko5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7A5162192B3E90059C131 /* piko5.mp3 */; };
 		9FE7A5192192B3F40059C131 /* finish1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7A5182192B3F40059C131 /* finish1.mp3 */; };
 		9FE881672197BF6B003D1430 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE881662197BF6B003D1430 /* TutorialViewController.swift */; };
+		DE033C607649A589038B1948 /* Pods_rouletteApp2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D154795EE248B5FD4603E1 /* Pods_rouletteApp2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1BDBC4B439511B13DC7E30DB /* Pods_rouletteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rouletteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E040BDFB9295171AE07872 /* Pods-rouletteApp2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rouletteApp2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rouletteApp2/Pods-rouletteApp2.debug.xcconfig"; sourceTree = "<group>"; };
+		95D154795EE248B5FD4603E1 /* Pods_rouletteApp2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rouletteApp2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F06AF5E2194781D00D088B9 /* terere.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = terere.mp3; sourceTree = "<group>"; };
 		9F173D3421950FD7008C3AFB /* finish2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = finish2.mp3; sourceTree = "<group>"; };
 		9F173D3621952AC2008C3AFB /* finish3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = finish3.mp3; sourceTree = "<group>"; };
 		9F173D3821955538008C3AFB /* doramu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = doramu.mp3; sourceTree = "<group>"; };
 		9F173D3A21955571008C3AFB /* ban.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ban.mp3; sourceTree = "<group>"; };
+		9FD47631219A63B800D29A58 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		9FD47635219B0A6B00D29A58 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (1).plist"; path = "../../../Downloads/GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		9FE7A5012192B1FD0059C131 /* rouletteApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rouletteApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE7A5042192B1FD0059C131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FE7A5062192B1FD0059C131 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,8 +44,7 @@
 		9FE7A5162192B3E90059C131 /* piko5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piko5.mp3; sourceTree = "<group>"; };
 		9FE7A5182192B3F40059C131 /* finish1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = finish1.mp3; sourceTree = "<group>"; };
 		9FE881662197BF6B003D1430 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
-		B735BBFAF3C3A4130FD41463 /* Pods-rouletteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rouletteApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rouletteApp/Pods-rouletteApp.debug.xcconfig"; sourceTree = "<group>"; };
-		EC8E5FDAAFC86F58AF78C96B /* Pods-rouletteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rouletteApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-rouletteApp/Pods-rouletteApp.release.xcconfig"; sourceTree = "<group>"; };
+		F28FB1DE5BE0E884467760CA /* Pods-rouletteApp2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rouletteApp2.release.xcconfig"; path = "Pods/Target Support Files/Pods-rouletteApp2/Pods-rouletteApp2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D621BEB2388C21683930BA6 /* Pods_rouletteApp.framework in Frameworks */,
+				DE033C607649A589038B1948 /* Pods_rouletteApp2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,8 +62,8 @@
 		4A93F5EB9D94AA612099BC7C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B735BBFAF3C3A4130FD41463 /* Pods-rouletteApp.debug.xcconfig */,
-				EC8E5FDAAFC86F58AF78C96B /* Pods-rouletteApp.release.xcconfig */,
+				88E040BDFB9295171AE07872 /* Pods-rouletteApp2.debug.xcconfig */,
+				F28FB1DE5BE0E884467760CA /* Pods-rouletteApp2.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -100,6 +103,7 @@
 				9FE7A50B2192B1FF0059C131 /* Assets.xcassets */,
 				9FE7A50D2192B1FF0059C131 /* LaunchScreen.storyboard */,
 				9FE7A5102192B1FF0059C131 /* Info.plist */,
+				9FD47635219B0A6B00D29A58 /* GoogleService-Info (1).plist */,
 			);
 			path = rouletteApp2;
 			sourceTree = "<group>";
@@ -107,7 +111,8 @@
 		E3C714A000CDEDD7C0A9EC61 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1BDBC4B439511B13DC7E30DB /* Pods_rouletteApp.framework */,
+				9FD47631219A63B800D29A58 /* Social.framework */,
+				95D154795EE248B5FD4603E1 /* Pods_rouletteApp2.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 				9FE7A50C2192B1FF0059C131 /* Assets.xcassets in Resources */,
 				9F173D3721952AC2008C3AFB /* finish3.mp3 in Resources */,
 				9FE7A50A2192B1FD0059C131 /* Main.storyboard in Resources */,
+				9FD47636219B0A6B00D29A58 /* GoogleService-Info (1).plist in Resources */,
 				9FE7A5172192B3E90059C131 /* piko5.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,18 +202,22 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-rouletteApp/Pods-rouletteApp-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-rouletteApp2/Pods-rouletteApp2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rouletteApp/Pods-rouletteApp-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rouletteApp2/Pods-rouletteApp2-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BC0451FD978B259896C35A42 /* [CP] Check Pods Manifest.lock */ = {
@@ -225,7 +235,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-rouletteApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-rouletteApp2-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -302,6 +312,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -363,6 +374,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -385,18 +397,21 @@
 		};
 		9FE7A5142192B1FF0059C131 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B735BBFAF3C3A4130FD41463 /* Pods-rouletteApp.debug.xcconfig */;
+			baseConfigurationReference = 88E040BDFB9295171AE07872 /* Pods-rouletteApp2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4YRLFNC4B;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/rouletteApp2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hiromu.rouletteApp;
+				PRODUCT_BUNDLE_IDENTIFIER = rouletteGO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -404,18 +419,21 @@
 		};
 		9FE7A5152192B1FF0059C131 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC8E5FDAAFC86F58AF78C96B /* Pods-rouletteApp.release.xcconfig */;
+			baseConfigurationReference = F28FB1DE5BE0E884467760CA /* Pods-rouletteApp2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4YRLFNC4B;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/rouletteApp2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hiromu.rouletteApp;
+				PRODUCT_BUNDLE_IDENTIFIER = rouletteGO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -9,8 +9,21 @@
 import UIKit
 import LTMorphingLabel
 import AVFoundation
+//import GoogleMobileAds
+//import Firebase
+
+
 
 class ViewController: UIViewController {
+    
+    // 広告ユニットID
+//    let AdMobID = "[ca-app-pub-1378399291069038/7385657586]"
+//    // テスト用広告ユニットID
+//    let TEST_ID = "ca-app-pub-3940256099942544/2934735716"
+//
+//    // true:テスト
+//    let AdMobTest:Bool = true
+//
     var textList = [String]()
     var player:AVAudioPlayer?
     var finishCount: Int = 0
@@ -80,12 +93,12 @@ class ViewController: UIViewController {
     @IBAction func retryB(_ sender: Any) {
         finishCount = 0
         textList = []
-        textLeft.text = ""
-        textRight.text = ""
-        textCenterLeft.text = ""
-        textCenterRight.text = ""
-        textUnderLeft.text = ""
-        textUnderRight.text = ""
+//        textLeft.text = ""
+//        textRight.text = ""
+//        textCenterLeft.text = ""
+//        textCenterRight.text = ""
+//        textUnderLeft.text = ""
+//        textUnderRight.text = ""
         index = 0
         sampleLabel.text = ""
         retryButton.isHidden = true
@@ -96,31 +109,51 @@ class ViewController: UIViewController {
         plus.isHidden = false
         minus.isHidden = false
         sampleLabel.textColor = UIColor.black
+        moveB.isHidden = true
     }
     
     @IBOutlet weak var shareButton: UIButton!
     
     @IBAction func share(_ sender: Any) {
-        let shareText = "ルーレットの結果"
-
-        let activityItems = [shareText] as [Any]
-
+        
+        let rect = view.bounds
+        
+        UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
+        
+        // ここでtrueを指定しないと、画面が変わった時に再キャプチャできないらしい
+        view.drawHierarchy(in: rect, afterScreenUpdates: true)
+        
+        let cont = UIGraphicsGetCurrentContext()
+        view.layer.render(in: cont!)
+        
+        // キャプチャした画像を変数に保持
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsEndImageContext()
+        
+        let shareText = "Oh my God!!"
+        
+        let activityItems = [shareText, image!] as [Any]
+        
         let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
-
-
+        
+        
         // 使用しないアクティビティタイプ
-//        let excludedActivityTypes = [
+        let excludedActivityTypes = [
 //            UIActivity.ActivityType.postToFacebook,
 //            UIActivity.ActivityType.postToTwitter,
-              //UIActivity.ActivityType.message
-//            UIActivity.ActivityType.saveToCameraRoll,
-//            UIActivity.ActivityType.print
-//        ]
-
-//        activityVC.excludedActivityTypes = excludedActivityTypes
-
+            UIActivity.ActivityType.mail,
+            UIActivity.ActivityType.message,
+            UIActivity.ActivityType.saveToCameraRoll,
+            UIActivity.ActivityType.print
+        ]
+        
+        activityVC.excludedActivityTypes = excludedActivityTypes
+        
         // UIActivityViewControllerを表示
         self.present(activityVC, animated: true, completion: nil)
+        
+       
        
     }
     
@@ -128,12 +161,12 @@ class ViewController: UIViewController {
     @IBAction func backButton(_ sender: Any) {
         finishCount = 0
         textList = []
-        textLeft.text = ""
-        textRight.text = ""
-        textCenterLeft.text = ""
-        textCenterRight.text = ""
-        textUnderLeft.text = ""
-        textUnderRight.text = ""
+//        textLeft.text = ""
+//        textRight.text = ""
+//        textCenterLeft.text = ""
+//        textCenterRight.text = ""
+//        textUnderLeft.text = ""
+//        textUnderRight.text = ""
         index = 0
         sampleLabel.text = ""
         retryButton.isHidden = true
@@ -148,7 +181,41 @@ class ViewController: UIViewController {
         backB.isHidden = true
         self.retryButton.isHidden = true
         self.shareButton.isHidden = true
+        moveB.isHidden = true
     }
+    
+   
+    @IBOutlet weak var moveB: UIButton!
+    //進むボタン押したときの処理。
+    @IBAction func moveOnButton(_ sender: Any) {
+        let moveRandam = Int(arc4random_uniform(UInt32(textList.count)))
+        print("donerandam is \(moveRandam)")
+        switch moveRandam {
+        case 0:
+            sampleLabel.text = textList[0]
+        case 1:
+            sampleLabel.text = textList[1]
+        case 2:
+            sampleLabel.text = textList[2]
+        case 3:
+            sampleLabel.text = textList[3]
+        case 4:
+            sampleLabel.text = textList[4]
+        case 5:
+            sampleLabel.text = textList[5]
+        default:
+            print("dame")
+            break
+        }
+        timer?.invalidate()
+        moveB.isHidden = false
+        self.retryButton.isHidden = false
+        self.shareButton.isHidden = false
+        backB.isHidden = true
+        moveB.isHidden = true
+        bgm(music: "finish1")
+    }
+    
     
     
     @IBOutlet weak var maku: NSLayoutConstraint!
@@ -180,17 +247,17 @@ class ViewController: UIViewController {
             
             
             //演出をランダムにするための処理
-            let directRandam = Int(arc4random_uniform(1))
+            let directRandam = Int(arc4random_uniform(4))
             print("directrandam is \(directRandam)")
             switch directRandam {
             case 0:
+                direct = 1
+            case 1:
+                direct = 2
+            case 2:
+                direct = 3
+            case 3:
                 direct = 4
-//            case 1:
-//                direct = 2
-//            case 2:
-//                direct = 3
-//            case 3:
-//                direct = 4
             default:
                 break
             }
@@ -201,6 +268,7 @@ class ViewController: UIViewController {
             textList = [textLeft.text, textRight.text] as! [String]
             if textCenterLeft.text != "" && counter > 0{
                 textList.append(textCenterLeft.text!)
+                
             }
             if textCenterRight.text != "" && counter > 1{
                 textList.append(textCenterRight.text!)
@@ -222,6 +290,7 @@ class ViewController: UIViewController {
             plus.isHidden = true
             minus.isHidden = true
             backB.isHidden = false
+            moveB.isHidden = false
             roulette(speed: 0.1)
             counter = 0
             
@@ -252,7 +321,7 @@ class ViewController: UIViewController {
             var animation: CABasicAnimation
             animation = CABasicAnimation(keyPath: "transform.rotation")
             animation.duration = 0.05
-            animation.fromValue = amount * Float(M_PI) / 180.0
+            animation.fromValue = amount * Float(Double.pi) / 180.0
             animation.toValue = 0 - (animation.fromValue as! Float)
             animation.repeatCount = 6.0
             animation.autoreverses = true
@@ -262,6 +331,7 @@ class ViewController: UIViewController {
             sampleLabel.layer.removeAnimation(forKey: "VibrateAnimationKey")
         }
     }
+    
     
     
     //拡大アニメーション
@@ -295,18 +365,57 @@ class ViewController: UIViewController {
     }
     
     
-    
-    
-    
-    
-    
-    
-    
+//    // 広告ユニットID
+//    let AdMobID = "[Your AdMob ID]"
+//    // テスト用広告ユニットID
+//    let TEST_ID = "ca-app-pub-3940256099942544/2934735716"
+//
+//    // true:テスト
+//    let AdMobTest:Bool = true
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        let gadBannerView = GADBannerView(adSize: kGADAdSizeBanner)
+//        gadBannerView.center = self.view.center
+//        gadBannerView.adUnitID = "ca-app-pub-1378399291069038/5600188223" // ここにAdMobで取得したIDを設定する
+//        gadBannerView.rootViewController = self;
+//        
+//        let request = GADRequest();
+//        gadBannerView.load(request)
+//        
+//        self.view.addSubview(gadBannerView)
+//
+        
+//        FirebaseApp.configure()
+//        //        // テスト用のアプリID
+//        GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544~1458002511")
+        
+//        print("Google Mobile Ads SDK version: \(GADRequest.sdkVersion())")
+//
+//        var admobView = GADBannerView()
+//
+//        admobView = GADBannerView(adSize:kGADAdSizeBanner)
+//        // iPhone X のポートレート決め打ちです
+//        admobView.frame.origin = CGPoint(x:0, y:self.view.frame.size.height - admobView.frame.height - 34)
+//        admobView.frame.size = CGSize(width:self.view.frame.width, height:admobView.frame.height)
+//
+//        if AdMobTest {
+//            admobView.adUnitID = TEST_ID
+//        }
+//        else{
+//            admobView.adUnitID = AdMobID
+//        }
+//
+//        admobView.rootViewController = self
+//        admobView.load(GADRequest())
+//
+//        self.view.addSubview(admobView)
+//
+    
+        
+        sampleLabel.adjustsFontSizeToFitWidth = true
         //改行ボタンを完了ボタンに変更
         textLeft.returnKeyType = .done
         textRight.returnKeyType = .done
@@ -327,7 +436,32 @@ class ViewController: UIViewController {
         // エフェクトの定義
         sampleLabel.morphingEffect = .scale
         //sampleLabel.delegate = self
+        
+        
+        
+//        print("Google Mobile Ads SDK version: \(GADRequest.sdkVersion())")
+//
+//        var admobView = GADBannerView()
+//
+//        admobView = GADBannerView(adSize:kGADAdSizeBanner)
+//        // iPhone X のポートレート決め打ちです
+//        admobView.frame.origin = CGPoint(x:0, y:self.view.frame.size.height - admobView.frame.height - 34)
+//        admobView.frame.size = CGSize(width:self.view.frame.width, height:admobView.frame.height)
+//
+//        if AdMobTest {
+//            admobView.adUnitID = TEST_ID
+//        }
+//        else{
+//            admobView.adUnitID = AdMobID
+//        }
+//
+//        admobView.rootViewController = self
+//        admobView.load(GADRequest())
+//
+//        self.view.addSubview(admobView)
+        
     }
+    
     
     //UItextField以外の部分をタッチした場合にキーボードを閉じる
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -380,7 +514,6 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         //幕を外に出す
         maku.constant -= view.bounds.height
-        
     }
     
     
@@ -518,7 +651,7 @@ class ViewController: UIViewController {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 9) {
                     self.sampleLabel.isHidden = true
                 }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 11) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 10.2) {
                     self.animate()
                     self.sampleLabel.isHidden = false
                     self.textDisplay(oto: "ban")
@@ -533,6 +666,7 @@ class ViewController: UIViewController {
         }
     
     }
+    
     
     @IBOutlet weak var sampleLabel: LTMorphingLabel!
 }
