@@ -24,11 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-//        FirebaseApp.configure()
+       // FirebaseApp.configure()
         //FirebaseApp.configure()
        // FirebaseApp.configure()
                 //        // テスト用のアプリID
-//                GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544~1458002511")
+//               GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544~1458002511")
         
         
 //         GADMobileAds.configure(withApplicationID: "ca-app-pub-1378399291069038~3567091251")

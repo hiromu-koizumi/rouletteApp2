@@ -12,7 +12,7 @@
 		9F173D3721952AC2008C3AFB /* finish3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F173D3621952AC2008C3AFB /* finish3.mp3 */; };
 		9F173D3921955538008C3AFB /* doramu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F173D3821955538008C3AFB /* doramu.mp3 */; };
 		9F173D3B21955571008C3AFB /* ban.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F173D3A21955571008C3AFB /* ban.mp3 */; };
-		9FD47636219B0A6B00D29A58 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FD47635219B0A6B00D29A58 /* GoogleService-Info (1).plist */; };
+		9F1C157821A0D5D50050AA54 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F1C157721A0D5D40050AA54 /* GoogleService-Info (1).plist */; };
 		9FE7A5052192B1FD0059C131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7A5042192B1FD0059C131 /* AppDelegate.swift */; };
 		9FE7A5072192B1FD0059C131 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7A5062192B1FD0059C131 /* ViewController.swift */; };
 		9FE7A50A2192B1FD0059C131 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE7A5082192B1FD0059C131 /* Main.storyboard */; };
@@ -32,8 +32,8 @@
 		9F173D3621952AC2008C3AFB /* finish3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = finish3.mp3; sourceTree = "<group>"; };
 		9F173D3821955538008C3AFB /* doramu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = doramu.mp3; sourceTree = "<group>"; };
 		9F173D3A21955571008C3AFB /* ban.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ban.mp3; sourceTree = "<group>"; };
+		9F1C157721A0D5D40050AA54 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (1).plist"; path = "../../../Downloads/GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		9FD47631219A63B800D29A58 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		9FD47635219B0A6B00D29A58 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (1).plist"; path = "../../../Downloads/GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		9FE7A5012192B1FD0059C131 /* rouletteApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rouletteApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE7A5042192B1FD0059C131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FE7A5062192B1FD0059C131 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 				9FE7A50B2192B1FF0059C131 /* Assets.xcassets */,
 				9FE7A50D2192B1FF0059C131 /* LaunchScreen.storyboard */,
 				9FE7A5102192B1FF0059C131 /* Info.plist */,
-				9FD47635219B0A6B00D29A58 /* GoogleService-Info (1).plist */,
+				9F1C157721A0D5D40050AA54 /* GoogleService-Info (1).plist */,
 			);
 			path = rouletteApp2;
 			sourceTree = "<group>";
@@ -186,7 +186,7 @@
 				9FE7A50C2192B1FF0059C131 /* Assets.xcassets in Resources */,
 				9F173D3721952AC2008C3AFB /* finish3.mp3 in Resources */,
 				9FE7A50A2192B1FD0059C131 /* Main.storyboard in Resources */,
-				9FD47636219B0A6B00D29A58 /* GoogleService-Info (1).plist in Resources */,
+				9F1C157821A0D5D50050AA54 /* GoogleService-Info (1).plist in Resources */,
 				9FE7A5172192B3E90059C131 /* piko5.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

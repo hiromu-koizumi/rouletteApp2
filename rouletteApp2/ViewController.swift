@@ -17,12 +17,12 @@ import AVFoundation
 class ViewController: UIViewController {
     
     // 広告ユニットID
-//    let AdMobID = "[ca-app-pub-1378399291069038/7385657586]"
+    let AdMobID = "ca-app-pub-1378399291069038/7385657586"
 //    // テスト用広告ユニットID
-//    let TEST_ID = "ca-app-pub-3940256099942544/2934735716"
+    let TEST_ID = "ca-app-pub-3940256099942544/2934735716"
 //
 //    // true:テスト
-//    let AdMobTest:Bool = true
+   let AdMobTest:Bool = true
 //
     var textList = [String]()
     var player:AVAudioPlayer?
@@ -377,42 +377,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let gadBannerView = GADBannerView(adSize: kGADAdSizeBanner)
-//        gadBannerView.center = self.view.center
-//        gadBannerView.adUnitID = "ca-app-pub-1378399291069038/5600188223" // ここにAdMobで取得したIDを設定する
-//        gadBannerView.rootViewController = self;
-//        
-//        let request = GADRequest();
-//        gadBannerView.load(request)
-//        
-//        self.view.addSubview(gadBannerView)
-//
         
-//        FirebaseApp.configure()
-//        //        // テスト用のアプリID
-//        GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544~1458002511")
-        
-//        print("Google Mobile Ads SDK version: \(GADRequest.sdkVersion())")
-//
-//        var admobView = GADBannerView()
-//
-//        admobView = GADBannerView(adSize:kGADAdSizeBanner)
-//        // iPhone X のポートレート決め打ちです
-//        admobView.frame.origin = CGPoint(x:0, y:self.view.frame.size.height - admobView.frame.height - 34)
-//        admobView.frame.size = CGSize(width:self.view.frame.width, height:admobView.frame.height)
-//
-//        if AdMobTest {
-//            admobView.adUnitID = TEST_ID
-//        }
-//        else{
-//            admobView.adUnitID = AdMobID
-//        }
-//
-//        admobView.rootViewController = self
-//        admobView.load(GADRequest())
-//
-//        self.view.addSubview(admobView)
-//
+
     
         
         sampleLabel.adjustsFontSizeToFitWidth = true
